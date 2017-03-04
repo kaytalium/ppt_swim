@@ -9,7 +9,7 @@ Swim
 ### Created by Ovel Heslop
 
 
-This application was designed to track weather patterns in specific areas (user defined ) and advises wheather users should work full hours or admended times. 
+This application was designed to track weather patterns in specific areas (user defined ) and advises whether users should work full hours or admended times. 
 
 ## Screen Shot
 
