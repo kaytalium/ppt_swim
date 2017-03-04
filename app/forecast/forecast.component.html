@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="header">5 DAYS WEATHER FORECAST FOR {{city | uppercase}}, JAMAICA  
+    
+    <select class="cityOption" (change)="cityOption($event)">
+    <option value="kingston">Kingston</option>
+    <option value="mobay">Mobay</option>
+  </select>
+  
+  </div>
+  <ul class="forecastDisplay" *ngIf="forecastFeed?.length>0" >
+   <li *ngFor="let feed of forecastFeed" >
+     <div class="imageDisplay">
+        <div class="info">{{feed.weather[0].main}}</div>
+       <img src="http://openweathermap.org/img/w/{{feed.weather[0].icon}}.png">   
+        <div class="workInfo">{{helper.workHour(feed.weather[0].main, ((feed.dt * 1000) | date:'EEE'),'ms')}}</div> 
+        <div class="workInfo">{{helper.workHour(feed.weather[0].main, ((feed.dt * 1000) | date:'EEE'),'it')}}</div>  
+     </div>
+     <div class="day">{{(feed.dt * 1000) | date:'EEE' }} </div>
+   </li>
+ </ul>
+</div>
+
+<div class="employeeStatus">
+  
+    <div class="staffHeader">
+      <h3>Total Affected Staff in this region: Total: {{(staffCompliment?.total)}} | IT: {{staffCompliment?.it}} | MS: {{staffCompliment?.ms}}</h3>
+     <button md-raised-button class="sendNotification" (click)="sendBulkEmail()" >Send Email to affected Staff for the Week</button>
+    </div>
+     <table *ngIf="staffForecastEmailData" >
+     <tr *ngFor="let staffData of staffForecastEmailData" >
+       <td style="width: 13%; font-size: 12px; background: lightblue; word-wrap:auto;">{{(staffData?.date)*1000 | date:'MMM d, y h:mm:ss a'}}</td>
+       <td style="width: 87%; font-size: 12px;">{{staffData?.mesg}} </td>       
+     </tr>
+     </table>
+     <div class="noData" *ngIf="(staffForecastEmailData)?.length<1" > 
+       <h1>No Data Found For This City</h1>
+     </div>
+</div>

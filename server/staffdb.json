@@ -1,0 +1,27 @@
+ [ {
+      "address1" : "13 Water Drive",
+      "city" : "kingston",
+      "country" : "Jamaica",
+      "email" : "kayheslop@gmail.com",
+      "name" : "John Brown",
+      "role" : "Manufactor",
+      "telephone" : "854-8547"
+    }, {
+      "address1" : "125 Watermelon Close",
+      "city" : "kingston",
+      "country" : "Jamaica",
+      "email" : "kayheslop@gmail.com",
+      "name" : "Susan Fagan",
+      "role" : "Information Technician",
+      "telephone" : "857-2114"
+    }, {
+      "address1" : "64 Rock Crescent",
+      "city" : "montego bay",
+      "country" : "Jamaica",
+      "email" : "kayheslop@gmail.com",
+      "name" : "Kain Reid",
+      "role" : "Manufactor",
+      "telephone" : "789-5428"
+    } ]
+
+

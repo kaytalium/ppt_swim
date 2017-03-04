@@ -1,0 +1,45 @@
+{
+  "name": "ppt_swim",
+  "version": "1.0.0",
+  "description": "Staff Weather Interpreter Manager SWIM",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"electron .\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaytalium/swim.git"
+  },
+  "author": "Ovel Heslop",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/forms": "*",
+    "@angular/http": "*",
+    "@angular/material": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "@angular/upgrade": "*",
+    "angular-in-memory-web-api": "*",
+    "angularfire2": "^2.0.0-beta.8",
+    "core-js": "*",
+    "firebase": "3.7.0",
+    "hammerjs": "*",
+    "reflect-metadata": "*",
+    "rxjs": "*",
+    "systemjs": "*",
+    "zone.js": "*"
+  },
+  "devDependencies": {
+    "@types/core-js": "*",
+    "@types/node": "*",
+    "concurrently": "*",
+    "typescript": "*",
+    "electron": "*"
+  }
+}
