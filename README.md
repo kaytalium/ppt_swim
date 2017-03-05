@@ -1,5 +1,7 @@
 Swim
 ===
+[![license](https://img.shields.io/github/license/kaytalium/ppt_swim.svg)]()
+[![GitHub tag](https://img.shields.io/github/tag/kaytalium/ppt_swim.svg)]()
 
 ## Staff Weather Interpreter Manager
 
